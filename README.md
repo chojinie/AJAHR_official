@@ -8,11 +8,7 @@
 
 <p>
   <strong><a href="https://chojinie.github.io/categories/">Hyunjin Cho</a><sup>*</sup></strong>, 
-<<<<<<< HEAD
-  <strong>Giyun Choi<sup>*</sup></strong>, 
-=======
   <strong><a href="https://www.linkedin.com/in/%EA%B8%B0%EC%9C%A4-%EC%B5%9C-574114289/?originalSubdomain=kr">Giyun Choi<sup>*</sup></strong>, 
->>>>>>> hdstcc/main
   <a href="https://www.vilab.cau.ac.kr/">Jongwon Choi</a><sup>†</sup>
 </p>
 
@@ -37,15 +33,7 @@ To overcome this, we introduce A3D (Amputee 3D Dataset) — a dataset that embed
 
 Built with real-world and studio-rendered scenes, A3D includes mesh overlays, ethnicity-aware skin tones, and varied clothing textures, enabling robust amputee-aware mesh regression beyond standard COCO/H36M assumptions.
 
-<!-- Dataset Preparation -->
-<details>
-  <summary><strong><h2>📥 Dataset Preparation</strong></h2></summary>
-To ensure that the dataset is used <strong>strictly for academic and research purposes</strong>, interested parties are required to complete this request form. Please provide information regarding your <strong>intended use</strong>, <strong>institutional affiliation</strong>, and any <strong>relevant ongoing projects</strong>. Your request will be reviewed, and further instructions will be provided upon approval. 
-
-🔗 <strong>Request Form:</strong> <a href="https://forms.gle/z5QGfXP9PxzSZM9F8" target="_blank" rel="noopener">https://forms.gle/z5QGfXP9PxzSZM9F8</a>
-> **Note:** In addition to the assets we release, you can also build your <strong>own amputee-aware dataset</strong> by following the procedure described in our paper. Our pipeline runs an <strong>off-the-shelf human pose/mesh model</strong> on any image that contains a person and uses the predictions as <strong>pseudo ground truth</strong> to construct amputee datasets and labels. We recommend this option when you need domain-specific data (e.g., clinical or in-the-wild). For step-by-step details, please refer to the paper.
-
-## 🔧 Setup and Installation<
+## 🔧 Setup and Installation
 
 The following section describes the verified environment setup used for reproducing the AJAHR framework.
 All instructions are tested with Python 3.10, PyTorch 2.1.0, and CUDA 11.8.
@@ -330,9 +318,6 @@ The following examples showcase AJAHR-trained mesh regression results on real am
 
 > These results demonstrate that AJAHR, trained on A3D, leverages BPAC-Net's amputation region classification to avoid hallucinating non-existent limbs, instead generating structurally valid meshes that adapt to the underlying amputee anatomy. Furthermore, this indicates that the proposed framework effectively reduces the representation gap between synthetic A3D training data and real-world amputee imagery.
 
-### Demo
-
-> The demo and the remaining code are coming soon—I’ll share them as I get them organized.
 ---
 
 ## License
@@ -355,9 +340,5 @@ If you find **AJAHR** useful in your research, please consider citing:
   month     = {October},
   publisher = {IEEE},
   note      = {to appear; arXiv:2509.19939}
-<<<<<<< HEAD
-}
-=======
 }
 
->>>>>>> hdstcc/main
