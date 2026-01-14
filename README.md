@@ -82,11 +82,6 @@ Python versions higher than 3.10 are not supported due to dependency constraints
 ```bash
 conda create -n ajahr python=3.10
 conda activate ajahr
-apt update
-apt-get install -y llvm-6.0 freeglut3 freeglut3-dev wget
-wget https://github.com/mmatl/travis_debs/raw/master/xenial/mesa_18.3.3-0.deb
-dpkg -i ./mesa_18.3.3-0.deb || true
-apt install -f
 ```
 
 4. Install PyTorch (CUDA 11.8)
@@ -130,6 +125,7 @@ This step is mandatory when running the demo on Docker or remote server environm
 ```bash
 apt update
 apt-get install -y llvm-6.0 freeglut3 freeglut3-dev wget
+wget https://github.com/mmatl/travis_debs/raw/master/xenial/mesa_18.3.3-0.deb
 dpkg -i ./mesa_18.3.3-0.deb || true
 apt install -f
 ```
