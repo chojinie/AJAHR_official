@@ -1,0 +1,56 @@
+# @package _global_
+defaults:
+  - /data_filtering: low1
+
+DATASETS:
+  TRAIN:
+    NON_TAR: 
+      H36M-TRAIN-AMP1:
+        WEIGHT: 0.033
+      H36M-TRAIN-AMP2:
+        WEIGHT: 0.033
+      H36M-TRAIN-AMP3:
+        WEIGHT: 0.033
+      H36M-TRAIN-AMP4:
+        WEIGHT: 0.033
+      H36M-TRAIN-AMP5:
+        WEIGHT: 0.030
+      H36M-TRAIN-AMP6:
+        WEIGHT: 0.030
+      COCO-TRAIN-AMP7:
+        WEIGHT: 0.036
+      MPII-TRAIN-AMP8:
+        WEIGHT: 0.036
+      COCO-VAL-AMP9:
+        WEIGHT: 0.036
+
+    TAR:
+      H36M-TRAIN-WMASK:
+        WEIGHT: 0.070
+      MPII-TRAIN-WMASK:
+        WEIGHT: 0.070
+      COCO-TRAIN-2014-WMASK-PRUNED:
+        WEIGHT: 0.070
+      COCO-TRAIN-2014-VITPOSE-REPLICATE-PRUNED12:
+        WEIGHT: 0.070
+      BEDLAM:
+        WEIGHT: 0.126
+      MPI-INF-TRAIN-PRUNED:
+        WEIGHT: 0.028
+      AVA-TRAIN-MIDFRAMES-1FPS-WMASK:
+        WEIGHT: 0.091
+      AIC-TRAIN-WMASK:
+        WEIGHT: 0.091
+      INSTA-TRAIN-WMASK:
+        WEIGHT: 0.084
+
+  VAL:
+    NON_TAR:
+      H36M-VAL-AMP1:
+        WEIGHT: 0.5
+      COCO-VAL:
+        WEIGHT: 0.5
+      # AJAHR_IDW:
+      #   WEIGHT: 0.5
+    
+  MOCAP: CMU-MOCAP
